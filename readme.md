@@ -1,0 +1,4 @@
+This is a server-side application built with Node.js and Express that serves a static HTML page for a signup form. The form collects user input. Upon submitting the form, the server sends a POST request to the Mailchimp API to subscribe the user to a mailing list. If the response from the Mailchimp API indicates a successful subscription (status code 200), the server sends a success HTML page as the response. Otherwise, a failure HTML page is sent as the response. The server also handles a POST request to "/failure" to redirect users back to the signup form in case of failure. The application listens on either the port specified in the environment variable "PORT" or port 3000, and it uses the "dotenv" package to load environment variables from a ".env" file.
+
+
+In order for this project to run you need to create a .env file and add an environmental variable named "AUTH" with a value of your mailchimp API key.

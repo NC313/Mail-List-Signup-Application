@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  z-index: 100;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 100;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.bottom {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+/* /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 60px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+/* Gradient Display */
+.grainy-gradient-intro:before {
+  background: #c3ccea;
+  filter: url(#f);
+}
+.grainy-gradient-intro:before, .grainy-gradient-intro:after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  --grad: radial-gradient(at 50%, red, rgba(255, 0, 0, 0.3) 55%, transparent 80%);
+  --mask: var(--grad), var(--grad);
+  -webkit-mask: var(--mask);
+  -webkit-mask-composite: source-in;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+  mix-blend-mode: unset;
+  content: "";
+}
+
+.grainy-gradient-intro:after {
+   background: linear-gradient(
+90deg, #760dfe 20%, #f51b26, #fd9900);
+}
