@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -70,25 +69,34 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .mask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      .mask h1 {
+        color: white;
+      }
+
+      .form-signin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body class="text-center">
+  <body class="mask">
 
-    <video id="myVideo" class="video-bg"  style="min-width: 100%; min-height: 100%;"
-    src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" playsinline autoplay muted loop></video>
- </video>
- <div class="mask">
- background: linear-gradient(
-   45deg,
-   rgba(29, 236, 197, 0.7),
-   rgba(91, 14, 214, 0.7) 100%
- );
- </div>
-    
+    <video id="myVideo" class="video-bg"  style="min-width: 100%; min-height: 100%;" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" playsinline autoplay muted loop></video>
+
 <main class="form-signin w-100 m-auto" >
   <form action="/" class="form-signin" method="POST">
     <img class="mb-4" src="images/White_shark-modified.png" alt="" width="72" height="57">
